@@ -1,0 +1,32 @@
+<body bgcolor="purple">
+    <div class="main">
+        <a href="/">Home</a> 
+        <a href="/insert">Insert</a> 
+        <a href="/display">Display</a> 
+    
+    </div>
+    
+        <hr size="4" color="red">
+        <h1>This is my Display page</h1>
+        <table border="2">
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>City</th>
+                <th>Fees</th>
+                <th>Delete</th>
+                <th>Edit</th>
+            </tr>
+            <%stuData.forEach((key)=>{%>
+                <tr>
+                    <td><%=key.rollno%></td>
+                    <td><%=key.name%></td>
+                    <td><%=key.city%></td>
+                    <td><%=key.fees%></td>
+                    <td><a href="/recdel/<%=key.id%>"> <i class="fa-solid fa-trash"></i> </a></td>
+                    <td><a href="/recedit/<%=key.id%>"> <i class="fa-solid fa-pen-to-square"></i></a></td>
+    
+                </tr>
+                
+                <% })%>
+        </table>

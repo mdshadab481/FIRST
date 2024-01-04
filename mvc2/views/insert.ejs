@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1
+        {
+            color: white;
+        }
+        a
+        {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            margin-left: 20px;
+            padding: 5px;
+
+        }
+        a:hover
+        {
+            color: black;
+        }
+        input
+        {
+            padding: 4px;
+            background-color: aqua;
+            border: 2px solid purple;
+            border-radius: 30px;
+        }
+    </style>
+</head>
+<body bgcolor="purple">
+    <a href="/">Home</a> |
+    <a href="/insert">Insert</a> |
+    <a href="/display">Display</a> |
+    <hr size="4" color="black">
+
+    <h1>This is my Insert page</h1>
+
+    <form action="/studentinsert" method="post">
+        
+        rollno:- <input type="number" name="rno">
+        <br>
+        <br>
+        name:- <input type="text" name="nm">
+        <br>
+        <br>
+        city:- <input type="text" name="city">
+        <br>
+        <br>
+        Fees:- <input type="number" name="fees">
+        <br>
+        <br>
+        <input type="submit" value="Data Saved!!!">
+
+
+    </form>
+
+
+</body>
+</html>

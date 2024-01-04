@@ -1,0 +1,35 @@
+studentEdit.js <body bgcolor="purple">
+    <div class="main">
+        <a href="/">Home</a> 
+        <a href="/insert">Insert</a> 
+        <a href="/display">Display</a> 
+    </div>
+    <hr size="4" color="red">
+    <h1>This is my Edit page</h1>
+
+    <form action="/editUpdateSave" method="post">
+        <input type="hidden" value="<%= stuData[0]._id %>" name="user_id">
+        <br>
+        <label for="">Edit Rollno:- </label> <br>
+        <input type="text" value="<%= stuData[0].rollno %> " name="rno">
+        <br>
+        <label for="">Edit name:-</label>
+        <br>
+        <input type="text" value="<%= stuData[0].name %>" name="nm">
+        <br>
+        <label for="">Edit city:-</label>
+        <br>
+        <input type="text" value="<%= stuData[0].city %>" name="city">
+        <br>
+        <label for="">Edit fees:-</label>
+        <br>
+        <input type="number" value="<%= stuData[0].fees %>" name="fees">
+        <br>
+        <button>Data Update</button>
+
+    </form>
+
+    
+
+</body>
+</html>
